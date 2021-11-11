@@ -1,0 +1,15 @@
+import java.util.Stack;
+public class stackTest {
+
+    public static void main(String[] args){
+        Stack<Character> stack = new Stack<>();
+        String myWord = "Supercalifragilisticexpialidocious";
+
+        for (int x = 0 ; x < myWord.length(); x++){
+            stack.push(myWord.charAt(x));
+        }
+        for (int x = stack.size(); x>0; x--){
+            System.out.println(stack.pop());
+        }
+    }
+}
